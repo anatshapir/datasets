@@ -33,15 +33,22 @@ df = pd.read_csv(DATA_BASE + "ballots50.csv", encoding="utf-8-sig")
 | `pisa_over_time.csv` | PISA: ציונים לאורך זמן | 1,310 |
 | `pisa_change_2018_2022.csv` | PISA: שינוי 2018-2022 | 86 |
 | `pisa_2025.csv` | PISA 2025: תוספת | 168 |
+| `happiness_2024.csv` | דוח האושר העולמי 2024: שורה לכל מדינה | 143 |
+| `happiness_by_year.csv` | דוח האושר העולמי: מדינה בכל שנה, 2005-2023 (קידוד latin-1, בכוונה) | 2,363 |
 
 ## הערות לשימוש
 
 - בקובץ `ballots_k25.csv` יש 838 שורות של מעטפות חיצוניות, שבהן מספר בעלי זכות הבחירה הוא 0. אלה נתונים לגיטימיים, ואי אפשר לחשב עליהם אחוז הצבעה.
 - בקובץ `knn_turnout_change.csv` אין להשתמש בבחירות 24 ו-25 כמאפיינים: זו דליפת נתונים.
 - נתון על קלפי או על יישוב אינו נתון על אדם.
+- - הקובץ `happiness_by_year.csv` שמור בקידוד latin-1 כמו שהגיע מ-Kaggle, ולא ב-UTF-8. זה בכוונה: שיעור 2 מלמד לטעון אותו עם `encoding="latin-1"`. לא להמיר.
+- בקובץ `happiness_2024.csv` העמודות מ-`Log GDP per capita` ועד `Dystopia + residual` הן חלקים של ציון האושר, לא הערכים עצמם.
+
 
 ## מקורות
 
 ועדת הבחירות המרכזית, הלמ"ס (קובצי PUF), OECD Health Statistics, OECD PISA, Our World in Data.
+
+World Happiness Report, דרך Kaggle (jainaru/world-happiness-report-2024-yearly-updated).
 
 </div>
